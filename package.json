@@ -1,0 +1,12 @@
+{
+  "name": "relative-strength",
+  "version": "1.0.0",
+  "description": "Proxy API for computing Relative Strength 1D using CoinGecko",
+  "main": "relative_strength.ts",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
