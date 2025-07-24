@@ -9,8 +9,11 @@ function formatDate(daysAgo) {
   return `${day}-${month}-${year}`;
 }
 
+const API_KEY = process.env.CG_DEMO_KEY_RS_LOG;
+
 const HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (compatible; RS-Bot/1.0; +https://relative-strength.vercel.app)'
+  'User-Agent': 'Mozilla/5.0 (compatible; RS-Bot/1.0; +https://relative-strength.vercel.app)',
+  'x-cg-demo-api-key': API_KEY
 };
 
 function delay(ms) {
@@ -105,3 +108,4 @@ module.exports = async (req, res) => {
     });
   }
 };
+
